@@ -1,0 +1,75 @@
+--gr.D
+--BAZA: zakupy w sklepie
+--Dane s¹ tabele
+CREATE TABLE produkt (
+  id_produkt INTEGER NOT NULL,
+  nazwa VARCHAR(20) NULL,
+  opis VARCHAR(20) NULL,
+  cena_netto INTEGER NULL,
+  podatek INTEGER NULL,
+  ilosc_sztuk INTEGER NULL,
+  PRIMARY KEY(id_produkt)
+);
+CREATE TABLE klient (
+  id_klient INTEGER NOT NULL,
+  imie VARCHAR(20) NULL,
+  nazwisko VARCHAR(20) NULL,
+  pesel CHAR(11) NULL,
+  telefon VARCHAR(20) NULL,
+  haslo VARCHAR(20) NULL,
+  rabat INTEGER NOT NULL,
+  PRIMARY KEY(id_klient)
+);
+CREATE TABLE zakup (
+  id_zakup INTEGER NOT NULL,
+  id_klient INTEGER NOT NULL,
+  data_zamowienia DATE NULL,
+  PRIMARY KEY(id_zakup)
+);
+CREATE TABLE koszyk (
+  id_produkt INTEGER NOT NULL,
+  id_zakup INTEGER NOT NULL,
+  cena_netto INTEGER NULL,
+  podatek INTEGER NULL,
+  ilosc_sztuk INTEGER NULL,
+  PRIMARY KEY(id_produkt, id_zakup)
+);
+
+--W tabeli koszyk kolumna:
+--id_zakup ma byæ kluczem obcym powi¹zanym z kolumn¹ zakup(id_zakup)
+--id_produkt ma byæ kluczem obcym powi¹zanym z kolumn¹ produkt(id_produkt)
+--W tabeli zakup kolumna id_klient ma byæ kluczem obcym powi¹zanym z kolumn¹ klient(id_klient)
+--Utwórz opisane klucze obce. U¿yj polecenia ALTER TABLE.
+--Rozwi¹zanie [3 pkt]
+
+--Napisaæ wyzwalacz uniemo¿liwiaj¹cy zmiany nazwiska klienta.
+--Wszystkie inne dane klienta mo¿na modyfikowaæ.
+--Rozwi¹zanie [3 pkt]
+
+--Napisaæ wyzwalacz, który podczas robienia zakupów bêdzie aktualizowa³
+--stan magazynu (kolumna ilosc_stuk w tabeli produkt ma byæ uaktualniona, nie przejmujemy siê
+--sytuacj¹, ¿e w magazynie jest za ma³o sztuk)
+--Rozwi¹zanie [3 pkt]
+
+--Napisaæ funkcjê spr_pesel(sprawdzany_pesel) sprawdzaj¹c¹ poprawnoœæ numeru pesel i zwracaj¹c¹
+--wartoœæ logiczn¹ true dla poprawnego i false dla niepoprawnego numeru pesel
+--Napisaæ wyzwalacz uniemo¿liwiaj¹cy zmodyfikowanie danych klienta o
+--niepoprawnym numerze pesel
+/* Na wszelki wypadek przypomnienie:
+Rozwa¿my PESEL osoby urodzonej 8 lipca 1902 roku, p³ci ¿eñskiej (parzysta koñcówka numeru z serii – 0362). Czyli mamy wówczas 0207080362. Teraz kolejne cyfry nale¿y przemno¿yæ przez odpowiednie wagi i dodaæ do siebie.
+0*1 + 2*3 + 0*7 + 7*9 + 0*1 + 8*3 + 0*7 + 3*9 + 6*1 + 2*3 = 0 + 6 + 0 + 63 + 0 + 24 + 0 + 27 + 6 + 6 = 132
+Wynik dzielimy modulo przez 10.
+132 mod 10 = 2
+A nastêpnie odejmujemy od 10
+10 - 2 = 8.
+I wynik dzielimy znów modulo 10
+8 mod 10 = 8
+Cyfra kontrolna to 8, zatem nasz prawid³owy numer PESEL to: 02070803628
+*/
+--Rozwi¹zanie [3 pkt]
+
+--Do tabeli klient dodaj kolumnê usuniety przyjmuj¹c¹ 1 gdy klient jest usuniêty, a
+--0 gdy nie jest
+--Napisaæ wyzwalacz zabraniaj¹cy usuwaniu klientów, a w zamian ustawiaj¹cy wartoœæ
+--kolumny usuniety na 1 dla usuwanego klienta
+--Rozwi¹zanie [3 pkt]

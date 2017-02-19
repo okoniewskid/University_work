@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <MONITOR BRAND="BenQ" PIXELS="1080"/>
+  <MONITOR BRAND="Panasonic" PIXELS="720"/>
+  <MONITOR BRAND="Hyundai" PIXELS="720"/>
+  <MONITOR BRAND="Edytowany" PIXELS="720"/>
+  
+</dataset>

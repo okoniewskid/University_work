@@ -1,0 +1,41 @@
+u=c(0.2763, 0.3318,  0.2299, 0.1620)
+U<-as.table(t(matrix(u,2,2)))
+colnames(U)<- paste("X",c(-3,6),sep="=")
+rownames(U)<- paste("Y",c(-3,3),sep="=")
+Wx <- c(-3,6)
+Wy <- c(-3,3)
+PrX<-c(sum(U[,1]),sum(U[,2]))
+PrY<-c(sum(U[1,]),sum(U[2,]))
+#apply(U,2,sum) # sumy kolumn macierzy U
+#apply(U,1,sum) # sumy wierszy macierzy U
+
+PrXwY=prop.table(U,1)
+PrYwX=prop.table(U,2)
+EX<-sum(Wx*PrX)
+EY<-sum(Wy*PrY)
+VarX <- sum(Wx^2 * PrX)-EX^2
+VarY <- sum(Wy^2 * PrY)-EY^2
+#Punkt 4:
+EXwY <- c(sum(Wx*PrXwY[1,]),sum(Wx*PrXwY[2,]))
+#apply(Wx*t(PrXwY),2,sum)
+EYwX <- c(sum(Wy*PrYwX[,1]),sum(Wy*PrYwX[,2]))
+#apply(Wy*PrYwX,2,sum)
+
+#Punkt 5: Oczywiœcie E(E(X|Y))=E(X) i E(E(Y|X))=E(Y)
+VarEXwY <- sum(EXwY^2*PrY) - EX^2
+VarEYwX <- sum(EYwX^2*PrX) - EY^2
+
+#Punkt 6: 
+VarXwY <- c(sum((Wx - EXwY[1])^2 * PrXwY[1,]),sum((Wx - EXwY[2])^2 * PrXwY[2,]))
+VarYwX <- c(sum((Wy - EYwX[1])^2 * PrYwX[,1]),sum((Wy - EYwX[2])^2 * PrYwX[,2]))
+
+#Punkt 7: 
+# Z definicji warunkowej wartoœci oczekiwanej E(Var(X|Y)) = E[E(X- E(X|Y))^2|Y)] = E(X- E(X|Y))^2
+
+EVarXwY <- sum((Wx-EXwY[1])^2*U[1,] + (Wx-EXwY[2])^2*U[2,])
+
+#Punkt 8:
+#Prawdziwy wzór ma postaæ
+#Var(X) = E(Var(X|Y)) + Var(E(X|Y))
+
+# Mo¿na sprawdziæ, ¿e VarX = EVarXwY + VarEXwY

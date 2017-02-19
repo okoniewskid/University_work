@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>     
+  <tests>
+      <add>
+        <firstNumber>1000</firstNumber>
+        <secondNumber>100</secondNumber>
+        <expected>900</expected>
+      </add>
+      <add>
+        <firstNumber>100</firstNumber>
+        <secondNumber>50</secondNumber>
+        <expected>50</expected>
+      </add>
+      <add>
+        <firstNumber>155</firstNumber>
+        <secondNumber>35</secondNumber>
+        <expected>120</expected>
+      </add>
+      <add>
+        <firstNumber>1200</firstNumber>
+        <secondNumber>700</secondNumber>
+        <expected>500</expected>
+      </add>
+    </tests>

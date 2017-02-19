@@ -1,0 +1,12 @@
+//program wyświetlający literę i liczbę
+vold main()
+{
+  int liczba = 8;
+  char litera = "Z";
+
+  printf("Oto liczba");
+  printf(liczba);
+
+  printf("Oto litera");
+  printf(litera);
+}

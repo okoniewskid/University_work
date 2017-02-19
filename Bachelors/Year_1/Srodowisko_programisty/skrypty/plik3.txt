@@ -1,0 +1,2 @@
+to jest zawartosc pliku 1
+to jest zawartosc pliku 2

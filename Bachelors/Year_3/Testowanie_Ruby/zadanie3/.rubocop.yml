@@ -1,0 +1,15 @@
+Style/ClassVars:
+ Enabled: false
+
+Metrics/MethodLength:
+ Enabled: false
+
+Metrics/AbcSize:
+ Enabled: false
+
+Metrics/PerceivedComplexity:
+ Enabled: false
+
+Metrics/CyclomaticComplexity:
+ Enabled: false
+

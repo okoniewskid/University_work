@@ -1,0 +1,53 @@
+body { 
+	background: url(lab5tlo.png);
+}
+#pudelko {
+	margin: 30px auto 0px auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid red;
+	width: 600px;
+	background: white;
+}
+#zadanie{
+float:left;
+margin: 10px 30px 10px 10px;
+border: 1px solid black;
+width: 250px;
+}
+
+#figura{
+margin: 10px 10px 30px 10px;
+padding:5px;
+border: 1px solid black;
+width:250px;
+height: 200px;
+display: inline-block;
+}
+
+#wzor{
+border: 1px solid black;
+margin: 5px 5px auto 5px;
+}
+h1 {
+	text-align: center;
+	color: red;
+}
+img#logo {
+	float: right;
+	margin: 10px;
+}
+p {
+	text-align: justify;
+}
+.normalny {
+	font-family: Tahoma, Arial, serif;
+	text-align: center;
+}
+.dane {
+	font-family: Tahoma, Arial, serif;
+}
+.pochylony {
+	font-family: Tahoma, Arial, serif;
+	font-style: italic;
+}

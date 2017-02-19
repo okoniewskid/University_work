@@ -1,0 +1,21 @@
+﻿cytat {
+	display:block;
+	border: 1px solid black;
+	margin: 20px;
+	padding: 10px;
+	width: 400px;
+}
+autor { 
+	display:block;
+	font-style:italic;
+	margin-left:200px;
+}
+[m="reszta"]>:first-child{
+	color: red;
+}
+cos>cos[x="trzy"] autor{
+	color: blue;
+}
+haczyk cos {
+	color:green;
+}

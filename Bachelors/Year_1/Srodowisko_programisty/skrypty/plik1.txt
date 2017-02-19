@@ -1,0 +1,77 @@
+#!/bin/bash
+
+#Wyświetlanie zmiennych
+#echo "Hello world"
+#echo $USER
+#echo $PWD
+#echo $PATH
+
+#Wyświetlanie daty za pomocą zmiennej
+#data=`date` 
+#echo $data
+
+#Wyświetlanie zawartości 2 plików
+#echo "`cat $1` `cat $2`"
+
+#Łączenie i wyświetlanie zawartości 2 plików
+#cat $1 $2 > $3
+#echo "`cat $3`"
+
+#Wyświetlanie nazwy skryptu ($0)
+#cat $1 $2 > $3
+#echo $0 "`cat $3`"
+
+#Wyświetlanie wszystkich parametrów skryptu
+#echo "`cat $@`"
+
+#echo $@
+#shift 
+#echo $@
+#shift 
+#echo $@
+
+#Wyświetla czy wykonano ostatnie polecenie (1).
+#echo $?
+
+#Wyświetla czy plik (parametr) istnieje.
+#if [ -e $1 ]
+#then echo "Plik istnieje"
+#fi
+
+#Wyświetla czy plik (parametr) istnieje, czy nie
+#if [ -e $1 ]
+#then echo "Plik $1 istnieje"
+#else echo "Plik $1 nie istnieje"
+#fi
+
+#Sprawdza istnienie 2 plików.
+#if [ -e $1 -a -e $2 ]
+#	then echo "Pliki $@ istnieja"
+#	else echo "Pliki $@ nie istnieja"
+#fi
+
+#Wyświetla liczbę podkatalogów w bierzącym katalogu.
+#if [ -d $1 ]
+#	then echo `ls -l| grep ^d| wc -l`
+#	else echo "Parametr $1 nie jest katalogiem"
+#fi
+
+#Dopisuje rozszerzenie do plików.
+#for z in `ls`
+#	do
+#		if [ `basename $z` != `basename $0` ]
+#			 then cp $z $z.old
+#		fi
+#	done
+
+#Ustala który plik ma więcej znaków 
+#x=`cat $1 | wc -m`
+#y=`cat $2 | wc -m`
+#if [ $x -gt $y ]
+#	then
+#	   echo "plik $1 jest większy"
+#	else 
+#	   echo "plik $2 jest większy"
+#fi
+
+for((i -eq $1;i -le $2; i++))

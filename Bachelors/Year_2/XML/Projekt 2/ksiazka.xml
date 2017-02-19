@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ksiazka>
+	<osoba plec="m" kod="ucz">
+		<imie>Jan</imie>
+		<nazwisko>Brzechwa</nazwisko>
+		<adres>
+			<miasto>Gdynia</miasto>
+			<ulica>10 Lutego</ulica>
+			<nr_domu>12b</nr_domu>
+			<kod_pocztowy>22-222</kod_pocztowy>
+		</adres>
+		<kontakt>
+			<telefon typ='dom'>661254367</telefon>
+			<email>jb@gmail.com</email>
+			<gg>1234567</gg>
+		</kontakt>
+		<strona>http://inf.ug.edu.pl/</strona>
+		<daty>2012-04-13 2012-05-23</daty>
+		<status tekst="jestem offline"/>
+	</osoba>
+	
+	<osoba plec="k" kod="pra">
+		<imie>Janina</imie>
+		<nazwisko>Brzechwa</nazwisko>
+		<adres>
+			<miasto>Gdynia</miasto>
+			<ulica>10 Lutego</ulica>
+			<nr_domu>12b</nr_domu>
+			<kod_pocztowy>22-222</kod_pocztowy>
+		</adres>
+		<kontakt>
+			<telefon typ='dom'>661254367</telefon>
+			<email>jb@gmail.com</email>
+			<gg>1234567</gg>
+		</kontakt>
+		<strona>http://inf.ug.edu.pl/</strona>
+		<daty>2012-04-13 2012-05-23</daty>
+		<status tekst="jestem offline"/>
+	</osoba>
+	
+	<osoba plec="m" kod="rod">
+		<imie>Jan</imie>
+		<nazwisko>Brzechwa</nazwisko>
+		<adres>
+			<miasto>Gdynia</miasto>
+			<ulica>10 Lutego</ulica>
+			<nr_domu>12b</nr_domu>
+			<kod_pocztowy>22-222</kod_pocztowy>
+		</adres>
+		<kontakt>
+			<telefon typ='dom'>661254367</telefon>
+			<email>jb@gmail.com</email>
+			<gg>1234567</gg>
+		</kontakt>
+		<strona>http://inf.ug.edu.pl/</strona>
+		<daty>2012-04-13 2012-05-23</daty>
+		<status tekst="jestem offline"/>
+	</osoba>
+	
+	<grupy>		
+		<grupa kod='pra'>Praca</grupa>
+		<grupa kod='ucz'>Uczelnia</grupa>
+		<grupa kod='rod'>Rodzina</grupa>
+	</grupy>
+</ksiazka>

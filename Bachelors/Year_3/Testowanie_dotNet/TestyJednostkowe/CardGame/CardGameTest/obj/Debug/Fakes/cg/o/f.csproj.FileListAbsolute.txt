@@ -1,0 +1,11 @@
+C:\Users\dokoniewski\Documents\Visual Studio 2015\Projects\CardGame\CardGameTest\obj\Debug\Fakes\cg\b\CardGame.Fakes.xml
+C:\Users\dokoniewski\Documents\Visual Studio 2015\Projects\CardGame\CardGameTest\obj\Debug\Fakes\cg\b\CardGame.Fakes.dll
+C:\Users\dokoniewski\Documents\Visual Studio 2015\Projects\CardGame\CardGameTest\obj\Debug\Fakes\cg\b\CardGame.Fakes.pdb
+C:\Users\dokoniewski\Documents\Visual Studio 2015\Projects\CardGame\CardGameTest\obj\Debug\Fakes\cg\b\CardGame.dll
+C:\Users\dokoniewski\Documents\Visual Studio 2015\Projects\CardGame\CardGameTest\obj\Debug\Fakes\cg\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\dokoniewski\Documents\Visual Studio 2015\Projects\CardGame\CardGameTest\obj\Debug\Fakes\cg\b\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\dokoniewski\Documents\Visual Studio 2015\Projects\CardGame\CardGameTest\obj\Debug\Fakes\cg\b\CardGame.pdb
+C:\Users\dokoniewski\Documents\Visual Studio 2015\Projects\CardGame\CardGameTest\obj\Debug\Fakes\cg\b\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\dokoniewski\Documents\Visual Studio 2015\Projects\CardGame\CardGameTest\obj\Debug\Fakes\cg\o\f.csprojResolveAssemblyReference.cache
+C:\Users\dokoniewski\Documents\Visual Studio 2015\Projects\CardGame\CardGameTest\obj\Debug\Fakes\cg\o\CardGame.Fakes.dll
+C:\Users\dokoniewski\Documents\Visual Studio 2015\Projects\CardGame\CardGameTest\obj\Debug\Fakes\cg\o\CardGame.Fakes.pdb

@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ 
+<xsd:element name="hotel">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element ref="pokoje"/>
+			<xsd:element ref="rezerwacje"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:unique name="pokoj">
+		<xsd:selector xpath="pokoje/pokoj"/>
+		<xsd:field xpath="@nr"/>
+	</xsd:unique>
+	
+	<xsd:key name="unikatowynrpokoju">
+		<xsd:selector xpath="pokoje/pokoj"/>
+		<xsd:field xpath="@nr"/>
+	</xsd:key>
+	
+	 <xsd:keyref name="nrpokoju" refer="unikatowynrpokoju">
+		 <xsd:selector xpath="rezerwacje/rezerwacja"/>
+		<xsd:field xpath="@id"/>
+	 </xsd:keyref>
+	
+</xsd:element>
+			<xsd:element name="pokoje">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="pokoj" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="ilosc_osob" type="xsd:integer"/>
+									<xsd:element name="cena" type="xsd:decimal"/>
+									<xsd:element name="rodzaj_lozka" type="xsd:string"/>
+									<xsd:element name="tv" type="xsd:string"/>
+									<xsd:element name="internet" type="xsd:string"/>
+								</xsd:sequence>
+								<xsd:attribute name="nr" type="xsd:integer"/>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			
+			<xsd:element name="rezerwacje">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="rezerwacja" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="data_rezerwacji" type="xsd:date"/>
+									<xsd:element name="data_zameldowania" type="xsd:date"/>
+									<xsd:element name="data_wymeldowania" type="xsd:date"/>
+								</xsd:sequence>
+								<xsd:attribute name="id" type="xsd:integer"/>
+								<xsd:attribute name="nr_pokoju" type="xsd:integer"/>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>			
+</xsd:schema>

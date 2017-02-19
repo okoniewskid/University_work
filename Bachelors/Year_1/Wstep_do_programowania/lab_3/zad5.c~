@@ -1,0 +1,60 @@
+ #include <stdio.h> 
+
+ 
+ int main()
+
+ 
+ {
+
+ 
+ float suma; /* zmienna do sumowania liczb */
+
+ 
+ int licznik; /* zmienna do zapamietywania liczby liczb*/ 
+
+ 
+ float srednia; /* zmienna do zapisania wartosci sredniej z liczb */ 
+
+  float liczba; /* przechowuje wartosc kolejnej liczby */
+
+ 
+
+  suma = 0; 
+
+ 
+  licznik = 0; 
+
+ 
+  liczba = 0;
+
+
+  while (licznik < 300){ 
+
+ 
+    suma = suma + liczba; /* sumujemy liczby */
+
+ 
+    liczba = liczba + 1; /* zwiekszamy liczbe */
+
+ 
+    licznik = licznik + 1; /* zwiekszamy licznik liczb */
+
+ 
+ }
+
+ 
+
+ srednia = suma/licznik; 
+
+ 
+printf("oto suma liczb %f",suma);
+
+ 
+printf("a to ich wartosc srednia %f",srednia);
+
+ 
+
+return 0;
+
+ 
+}

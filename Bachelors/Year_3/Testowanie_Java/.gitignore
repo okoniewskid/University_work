@@ -1,0 +1,10 @@
+target
+*.zip
+*.tar
+*.tzg
+.log
+.classpath
+.prefs
+.project
+.settings
+.DS_Store

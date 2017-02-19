@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<biegi>
+	<zawodnik plec="k">
+			<nazwisko>Kowalska Anna</nazwisko>
+			<wynik>234</wynik>
+	</zawodnik>
+	<zawodnik plec="m">
+			<nazwisko>Malinowski Jan</nazwisko>
+			<wynik>209</wynik>
+	</zawodnik>
+	<zawodnik plec="m">
+			<nazwisko>Miauczynski Teodor</nazwisko>
+			<wynik>215</wynik>
+	</zawodnik>
+	<zawodnik plec="k">
+			<nazwisko>Marchew Julia</nazwisko>
+			<wynik>236</wynik>
+	</zawodnik>
+	<zawodnik plec="m">
+			<nazwisko>Straszak Patryk</nazwisko>
+			<wynik>200</wynik>
+	</zawodnik>
+	<zawodnik plec="k">
+			<nazwisko>Pilowska Danuta</nazwisko>
+			<wynik>227</wynik>
+	</zawodnik>
+	<zawodnik plec="m">
+			<nazwisko>Nowomiejski Eryk</nazwisko>
+			<wynik>210</wynik>
+	</zawodnik>
+	<zawodnik plec="k">
+			<nazwisko>Suszynska Anna</nazwisko>
+			<wynik>267</wynik>
+	</zawodnik>
+	<zawodnik plec="m">
+			<nazwisko>Plik Igor</nazwisko>
+			<wynik>217</wynik>
+	</zawodnik>
+</biegi>
+
+
+
+
+		
+
+
+
+
+	

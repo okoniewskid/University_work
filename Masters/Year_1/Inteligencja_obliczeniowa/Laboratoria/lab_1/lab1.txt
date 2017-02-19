@@ -1,0 +1,40 @@
+##Zadanie 1
+#Pobranie danych. 
+osoby = read.csv("osoby.csv")
+
+#Wyswietlanie imion.
+subset(osoby, select=c("imie"))
+
+#Wyswietlenie danych kobiet.
+subset(osoby, plec == "k")
+
+#Wyswietlanie danych mezczyzn starszych niz 50 lat.
+subset(osoby, plec == "m" & wiek > 50)
+
+#Zapisanie danych mezczyzn do zmiennej i eksport do pliku.
+man50 = subset(osoby, plec == "m" & wiek > 50)
+write.csv(man50, file = "osoby2.csv")
+
+##Zadanie 2
+#Dodanie kolumny wyplata.
+osoby$wyplata <- round(runif(7, 2000.0, 5000.0), digits = 2)
+
+#Dodanie nowego rekordu.
+newRow <- data.frame(nazwisko = "Kowalski", imie = "Jan", plec = "m", wiek = 30, wyplata = round(runif(1, 2000.0, 5000.0), digits = 2))
+osoby <- rbind(osoby, newRow)
+
+#Œrednia
+oMean = mean(osoby$wyplata)
+#Odchylenie
+oDeviation = sd(osoby$wyplata)
+#Minimum
+oMin = min(osoby$wyplata)
+#Maximum
+oMax = max(osoby$wyplata)
+
+#Ustandaryzowane wyp³aty
+osoby$ustandaryzowana <- (osoby$wyplata-oMean)/oDeviation
+
+#Znormalizowane wyp³aty
+osoby$znormalizowana <- (osoby$wyplata-oMin)/(oMax-oMin)
+

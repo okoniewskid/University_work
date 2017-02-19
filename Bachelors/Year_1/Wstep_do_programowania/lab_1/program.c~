@@ -1,0 +1,17 @@
+#include <stdio.h>
+void main()
+{
+  int liczba;
+  char litera;
+
+  printf("To jest program wypisujący liczbę i literę\n");
+
+  liczba = 3;
+
+  printf("Oto liczba:%d",liczba);
+
+  litera = 'z';
+
+  printf("Oto litera: %c",litera);
+  
+}

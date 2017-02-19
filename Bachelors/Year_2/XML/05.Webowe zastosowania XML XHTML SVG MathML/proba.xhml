@@ -1,0 +1,39 @@
+    <?xml version="1.0" encoding="utf-8"?>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+    <head>
+    <title>Kilka słów o XHTML (tytuł widziany na pasku przeglądarki)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="lab5styl1.css" />
+    </head>
+    <body>
+    <div id="pudelko">
+    <h1 class="naglowek">XHTML</h1>
+    <img id="logo" src="lab5pic1.jpg" alt="robot xhtml"/>
+    <p class="normalny"><span class="grube">XHTML</span> (ang. Extensible HyperText
+    Markup Language, rozszerzalny język znaczników hipertekstowych) – język służący
+    do tworzenia stron WWW ogólnego przeznaczenia. Specyfikacje XHTML przygotowuje
+    organizacja <a href="http://www.w3.org/">W3C</a>.</p>
+    <p class="normalny">XHTML/1.0 nie jest następcą HTML, a jedynie przedstawieniem
+    HTML 4.01 w postaci XML. XHTML/2.0 miał być następcą HTML, niekompatybilnym wstecz,
+    ale ze względu na niekompatybilność Internet Explorera, a co za tym idzie niechęć
+    użytkowników, W3C zadecydowało o kontynuowaniu linii XHTML/1.0 i HTML 4 jako
+    XHTML 1.1 i HTML 5.</p>
+    <p class="normalny">W odróżnieniu od HTML-a (który jest aplikacją SGML),
+    dokumenty pisane w XHTML są zgodne z oficjalną specyfikacją XML (to znaczy,
+    że dokumenty w XHTML są poprawnymi dokumentami XML) i dzięki temu można je łatwo
+    generować z innych dokumentów XML przy pomocy np. transformacji XSLT, a także
+    automatycznie przekształcać w inne formy XML-a. Dzięki temu dokumenty te posiadają
+    większe możliwości, jak choćby wstawianie innych dokumentów za pomocą jednej
+    metody (element &lt;object/&gt;), zagnieżdżanie wzorów matematycznych
+    (język MathML), czy grafik wektorowych (język SVG).</p>
+    <p class="pochylony">Źródło: </p>
+    <ul>
+    <li>Wikipedia</li>
+    <li><a href="http://profitableintent.com/">Profitable Intent: Web Solutions</a>
+    (obrazek)</li>
+    </ul>	
+    </div>
+    </body>
+    </html>

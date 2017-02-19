@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT pracownicy (dzial_spozywczy, dzial_chemiczny)>
+<!ELEMENT dzial_spozywczy (pracownik*)>
+<!ELEMENT dzial_chemiczny (pracownik+)>
+<!ELEMENT pracownik (nazwisko, imie, data_zatr)>
+<!ATTLIST pracownik
+plec (m|k|bd) "bd"
+pesel NMTOKEN #REQUIRED
+status CDATA #IMPLIED>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT data_zatr (#PCDATA)>

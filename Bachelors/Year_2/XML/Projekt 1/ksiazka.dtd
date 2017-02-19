@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ENTITY % grupa "skrot ID #REQUIRED">
+<!ENTITY % osoba "plec (m|k) #IMPLIED
+				  gr IDREF #REQUIRED">
+
+<!ELEMENT ksiazka (osoba*, grupa+)>
+<!ELEMENT osoba (imie, nazwisko, telefon, gg?, email, strona?)>
+
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT gg (#PCDATA)>
+<!ELEMENT telefon (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT strona (#PCDATA)>
+<!ELEMENT grupa (#PCDATA)>
+
+<!ATTLIST osoba
+				%osoba;>
+<!ATTLIST grupa 
+				%grupa;>

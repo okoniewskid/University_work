@@ -1,0 +1,16 @@
+Test19 dane krzykowskiego:
+1. integra_10^16(x*1/30444(x^3 + 12*x^2 + 48x + 72))dx
+
+2. integra_10^16(x^2 *1/30444(x^3 + 12*x^2  + 48x + 72))dx - (integra_10^16(x*1/30444(x^3 + 12*x^2 + 48x + 72))dx)^2
+
+7. 1/(1/3(x^3)^(-2/3))*((x^3)^3 + 12(x^2)^3 + 48(x)^3 + 72)/30444
+
+8. integra_(\sqrt[3]{10})^(\sqrt[3]{16})(x*((18 x^2)/2537+(12 x^5)/2537+(3 x^8)/2537+x^11/10148)))dx
+
+integra_(\sqrt[3]{10})^(\sqrt[3]{16})(x*((18 x^2)/2537+(12 x^5)/2537+(3 x^8)/2537+x^11/10148)))dx^3
+
+w 1 maci wykr do 3-cigo
+
+integra_12.12^13.81(x*1/30444(x^3 + 12*x^2 + 48x + 72))dx - wykres do 5
+
+wprowadzacie swoje dane do wpisujecie to do wolframma

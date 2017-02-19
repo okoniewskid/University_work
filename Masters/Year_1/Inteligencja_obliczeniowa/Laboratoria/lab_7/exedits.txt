@@ -1,0 +1,8 @@
+Sepal.Length <= 30
+0 < Sepal.Length
+0 < Sepal.Width
+0 < Petal.Length
+0 < Petal.Width
+Species %in% c('setosa', 'versicolor', 'virginica')
+2*Petal.Width <= Petal.Length
+Petal.Length < Sepal.Length

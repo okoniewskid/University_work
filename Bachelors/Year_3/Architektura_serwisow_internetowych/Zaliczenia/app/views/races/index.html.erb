@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Rasy</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Nazwa</th>
+      <th>Opis</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @races.each do |race| %>
+      <tr>
+        <td><%= race.name %></td>
+        <td><%= race.description %></td>
+        <td><%= link_to 'Wyświetl', race %></td>
+        <td><%= link_to 'Edytuj', edit_race_path(race) %></td>
+        <td><%= link_to 'Usuń', race, method: :delete, data: { confirm: 'Jesteś pewien?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nowa rasa', new_race_path %>

@@ -1,0 +1,5 @@
+test57 dane Mielewczyka do wolframa
+h(1) = P(1) = 0.004
+h2 = 0.019/(1- 0.004) 
+h3 = 0.049/(1- 0.004-0.019)
+i tak wypisaæ do h10

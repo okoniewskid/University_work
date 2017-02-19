@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="faktura1">
+<xsd:complexType>
+<xsd:sequence>
+	<xsd:element name="produkty">
+	<xsd:complexType>
+	<xsd:sequence>
+		<xsd:element name="produkt">
+		<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="nazwa" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="kod" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="cena">
+				<xsd:complexType>
+				<xsd:simpleContent>
+				<xsd:extension base="xsd:integer">
+					<xsd:attribute name="waluta" type="xsd:string" use="required">
+					</xsd:attribute>
+				</xsd:extension>
+				</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ilosc" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+		</xsd:complexType>
+		</xsd:element>
+	</xsd:sequence>
+	</xsd:complexType>
+	</xsd:element>	
+	<xsd:element name="sklepy">
+	<xsd:complexType>
+	<xsd:sequence>
+		<xsd:element name="sklep">
+		<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="nazwa" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="adres">
+			<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="miasto" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="ulica" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="kod_pocztowy" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			</xsd:sequence>
+			</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="telefon" type="xsd:integer" minOccurs="1" maxOccurs="3"/>		
+			<xsd:element name="nip" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+		</xsd:complexType>
+		</xsd:element>
+	</xsd:sequence>
+	</xsd:complexType>
+	</xsd:element>	
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>	
+</xsd:schema>

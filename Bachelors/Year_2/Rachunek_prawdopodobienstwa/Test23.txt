@@ -1,0 +1,33 @@
+#zeby widziec dobre rezultaty nie wklejac wszystkich zadan naraz
+#zad1
+#R:
+#f<-function(x) po spacji wklejamy swój wzór
+f<-function(x) 1/46.5*(x+4)
+#2 pierwsze liczby w nawiasie to zakres z naszego zadania, 3 to odleglosc co jaka umieszczamy punkt, dowolna.
+WsX <- seq(10,13,0.01)
+WsY <- f(WsX)
+#ylim=c(0.25,0.4) to zakres w jakim wyswietla y, zeby rysunek byl ladny i przejrzysty, kazdy ma inna przeciwdziedzine.
+plot(WsX,WsY,type='l',ylim=c(0.25,0.4)) 
+polygon(c(11.13,11.13,11.47,11.47),c(0,f(11.13),f(11.47),0),col=2)
+#Pole <- (f(11.13)+f(11.47))/2*(11.47-11.13)
+#gestosc wolfram -> integrate 1/46.5*x*(x+4) from 10 to 13
+
+#zad2
+#maple8:
+#F:= x-> 1/28*(x^2/2+7x-60);
+#F(6);
+#F(8);
+#plot(F(x),x=6..8);
+#R:
+F <- function(x) 1/28*(x^2/2+7*x-60)
+WsX <- seq(6,8,0.1)
+plot(WsX,F(WsX),type='l')
+F(6.91)-F(6.79)
+#c(7.25,7.25) dowolne 2 takie same wartosci z naszego zakresu
+lines(c(7.25,7.25),c(F(6.79),F(6.91)),lwd=10,col='red') 
+
+#zad4
+#P(X=-6^Y=-6) = 0.0952
+#P(X=-6) = 0.56
+#P(Y=-6) = 0.17
+#sa niezalezne

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC
+    "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN"
+    "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl">
+<head>
+	<title>Imie</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="zad1.css" />
+</head>
+<body>
+	<div id="pudelko">
+			<div id="zadanie">
+			<p class="normalny">Twoje dane</p>
+			<p class="dane">Twoje Imię: Daniel</p>
+			<p class="dane">Numer stanowiska: 8</p>
+			<p class="dane">Miesiąc twojego urodzenia: 6</p>
+			<p class="dane">Ostatnie dwie cyfry indeksu: 60</p>
+			</div>
+			
+			<div id="figura">
+			<svg:svg width="500px" height="400px" version="1.1"
+			xmlns:svg="http://www.w3.org/2000/svg">
+			<!-- zielony prostokąt o czerwonym brzegu grubości 1 -->
+			<svg:circle cs="200" cy="90" r="40" stroke="black" stroke-width="2"
+			fill="white"/>
+			<svg:circle cx="300" cy="90" r="40"
+			stroke="black" stroke-width="2" fill="white" />
+			<svg:line x1="100" y1="50" x2="300" y2="50"
+			style="stroke:black;stroke-width:2"/>
+
+			</svg:svg>
+			</div>			
+			
+				
+		<div id="wzor">
+		<p class="normalny">Obliczenia na moich danych</p>	
+		<math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mrow>
+				
+				<mfrac>
+					<mi>6</mi>
+				 
+					<mi>8</mi>
+				 
+				 </mfrac>
+				 <mo>+</mo>
+				 <msqrt>
+					 <mi>0</mi>
+				 </msqrt>
+				 <mo>+</mo>
+				 <msup>
+					<mi>6</mi>
+					<mn>2</mn>
+				 </msup>
+				 <mo>=</mo>
+				 <mi>6</mi>
+				 <mfrac>
+					<mi>6</mi>
+				 
+					<mi>8</mi>
+				 
+				 </mfrac>
+				</mrow>
+			</math>
+		
+		</div>	 
+	</div>
+	
+	
+</body>
+</html>

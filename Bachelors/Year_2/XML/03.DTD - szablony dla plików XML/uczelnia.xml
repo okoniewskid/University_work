@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE uczelnia SYSTEM "uczelnia.dtd">
+
+<uczelnia>
+	<nazwa>UG</nazwa>
+	<rektor>
+		<tytul>Rektor</tytul>
+		<imie>Jan</imie>
+		<nazwisko>Kowalski</nazwisko>
+	</rektor>
+	<prorektor>
+		<tytul>protektor</tytul>
+		<imie>Radoslam</imie>
+		<nazwisko>Oziebala</nazwisko>
+	</prorektor>
+	<prorektor>
+		<tytul>Prorektor drugi</tytul>
+		<imie>Paweł</imie>
+		<nazwisko>Malinowski</nazwisko>
+	</prorektor>
+	<wydzial>
+		<nazwa>MFI</nazwa>
+		<dziekan>
+			<imie>Adam</imie>
+			<nazwisko>Nowak</nazwisko>
+			<tytul>Dziekan</tytul>
+		</dziekan>
+		<prodziekan>
+			<imie>Jerzy</imie>
+			<nazwisko>Topp</nazwisko>
+			<tytul>Prodziekan</tytul>
+		</prodziekan>
+		<instytut>
+			<nazwa>Informatyk</nazwa>
+			<dyrektor>
+				<tytul>Szef</tytul>
+				<imie>Marcin</imie>
+				<nazwisko>Mackiewicz</nazwisko>
+			</dyrektor>
+		</instytut>
+		<kierunek>
+			<nazwa>Kierunek</nazwa>
+			<kurs>
+				<nazwa>Kurs</nazwa>
+				<opis>Opis kursu</opis>
+				<forma>Forma kursu</forma>
+				<limit>cos tam</limit>
+			</kurs>
+		</kierunek>
+	</wydzial>
+	<wydzial>
+		<nazwa>MFI</nazwa>
+		<dziekan>
+			<imie>Adam</imie>
+			<nazwisko>Nowak</nazwisko>
+			<tytul>Dziekan</tytul>
+		</dziekan>
+		<prodziekan>
+			<imie>Jerzy</imie>
+			<nazwisko>Topp</nazwisko>
+			<tytul>Prodziekan</tytul>
+		</prodziekan>
+		<instytut>
+			<nazwa>Informatyk</nazwa>
+			<dyrektor>
+				<tytul>Szef</tytul>
+				<imie>Marcin</imie>
+				<nazwisko>Mackiewicz</nazwisko>
+			</dyrektor>
+		</instytut>
+		<kierunek>
+			<nazwa>Kierunek</nazwa>
+			<kurs>
+				<nazwa>Kurs</nazwa>
+				<opis>Opis kursu</opis>
+				<forma>Forma kursu</forma>
+				<limit>cos tam</limit>
+			</kurs>
+		</kierunek>
+	</wydzial>
+	<katedra>
+	<nazwa>nazwa katedry</nazwa>
+	<dyrektor>
+		<tytul>Proboszcz</tytul>
+		<imie>Mateusz</imie>
+		<nazwisko>Natanek</nazwisko>
+		
+	</dyrektor>
+	</katedra>
+	<biblioteka>biblioteka</biblioteka>
+</uczelnia>

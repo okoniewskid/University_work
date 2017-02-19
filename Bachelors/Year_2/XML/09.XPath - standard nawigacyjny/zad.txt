@@ -1,0 +1,20 @@
+//studenci/student[@plec="m"]
+//studenci/student[@indeks<130 or @indeks>190]
+//student[imie = 'Marcin']/following-sibling::[1]/@indeks
+//studenci/student[nazwisko="Nowak"]//kierunek
+//student[imie='Jan']/*
+concat("Ostatni student: ", /studenci/student[position() = last()]/imie, " ", /studenci/student[position() = last()]/nazwisko)
+string-length(//student[contains(string(),'1990')]/imie)
+//student[@plec="k" and [kierunek="Matematyka"]]
+//student[not(drugie-imie)]
+//student[@indeks=[kierunek="Informatyka"]]
+//student[3]//*
+//student[position() mod2=1]
+//student[studia[@typ="stacjonarne licencjackie"] or studia[@typ="stacjonarne magisterskie"]]
+//student[studia[@typ="stacjonarne licencjackie"] or studia[@typ="niestacjonarne licencjackie"]]//@indeks
+//student[@indeks!="122"]
+//studenci//student[@indeks>130 and @indeks<135]
+sum(//student/@indeks)
+//student[contains(string(),'-12-')]/nazwisko
+ceiling(//student[nazwisko = 'Nowak']/@indeks div //student[nazwisko = 'Kowalski']/@indeks)
+count(//student/nazwisko[starts-with(string(),'K')])

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="faktury">
+	<xsd:complexType>
+		<xsd:sequence>	
+			<xsd:element name="faktura" type="mojaFaktura" maxOccurs="unbounded"/>
+			<xsd:element name="fakturaPro" type="mojaFakturaPro" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="mojaFaktura">	
+	<xsd:sequence>
+		<xsd:element name="nazwa_produktu"/>
+		<xsd:element name="kod_produktu" type="mojKod_produktu"/>
+		<xsd:element name="cena">
+			<xsd:complexType>
+				<xsd:simpleContent>
+					<xsd:extension base="mojaCena">
+						<xsd:attribute name="waluta" type="mojaWaluta" use="required"/>
+					</xsd:extension>
+				</xsd:simpleContent>
+			</xsd:complexType>
+		</xsd:element>			
+		<xsd:element name="ilosc_zakupionych" type="mojaIlosc_zakupionych"/>
+		<xsd:element name="sklep" type="mojSklep"/>
+		<xsd:element name="dostawca" type="mojeDaneKontaktowe"/>
+	</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="mojaFakturaPro">
+	 <xsd:complexContent>
+    	<xsd:extension base="mojaFaktura">
+			<xsd:sequence>
+		 		<xsd:element name="strona" type="xsd:string"/>
+			</xsd:sequence>
+	  		</xsd:extension>
+    </xsd:complexContent>
+</xsd:complexType>
+
+	<xsd:simpleType name="mojKod_produktu">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="\S{5,10}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="mojaCena">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="\d,\d{2}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="mojaWaluta">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="zl"/>
+			<xsd:enumeration value="dolar"/>
+			<xsd:enumeration value="euro"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="mojaIlosc_zakupionych">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="mojSklep">
+		<xsd:sequence>
+			<xsd:element name="nazwa"/>
+			<xsd:element name="adres" type="mojAdres"/>
+			<xsd:element name="telefon" type="mojTelefon"/>
+			<xsd:element name="nip" type="mojNip"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:simpleType name="mojTelefon">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="\d{9}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="mojNip">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9-]+"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="mojeDaneKontaktowe">
+		<xsd:all>
+			<xsd:element name="imie"/>
+			<xsd:element name="nazwisko"/>
+			<xsd:element name="adres" type="mojAdres"/>
+			<xsd:element name="telefony">
+				<xsd:complexType>
+					<xsd:choice>
+						<xsd:element name="tel_kom"/>
+						<xsd:element name="tel_stac"/>
+					</xsd:choice>	
+				</xsd:complexType>				
+			</xsd:element>
+		</xsd:all>
+	</xsd:complexType>
+	
+	<xsd:complexType name="mojAdres">
+		<xsd:sequence>
+			<xsd:element name="miasto" type="xsd:string"/>
+			<xsd:element name="kod" type="xsd:string"/>
+			<xsd:element name="ulica" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

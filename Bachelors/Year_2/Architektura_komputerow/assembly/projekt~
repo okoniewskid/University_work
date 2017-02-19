@@ -1,0 +1,18 @@
+-nostdlib
+
+./a.out f1 f2 n
+
+program wyswietlajacy n-ty wyraz ciagu fibonacciego zaczynajacego sie na f1 i f1
+
+nr indeksu .......xy
+a=x+1
+b=y+1
+
+f(n+1)=a*f(n+1)+b*f(n)
+
+(suma cyfr indeksu)%3
+0:system 8
+1:system10
+2:system16
+
+n od 1 do 255

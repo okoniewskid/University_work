@@ -1,0 +1,12 @@
+test 37 
+zad1. dane Popko:
+dobra, jak policzyc to xq i f(xq) wymagane w zadaniu: wpisujemy do wolframam obie ta calki w takiej formie
+integra_0^x(5.03529*t^(0.75)*e^(-2.4*t))dt = integra_0^x(61.02579*t^(2.2)*e^(-4.76582*t))dt
+i wolfram liczy nam xq potem do ktorejs z nich (roznie jest w zestawach, jedni mjaa f1(xq) inni f2
+podstawiamy wyliczone xq
+integra_0^0.62079(5.03529*t^(0.75)*e^(-2.4*t))dt
+a to wpisac do wolframa zeby dal wykres
+61.02579*t^(2.2)*e^(-4.76582*t) t from 9.48 to 11.48
+zad2. rysunek na forum grupy
+zad3. dane krzykowskiego
+FindRoot[{NIntegrate[ 145.18695 t^(k - 1) (1 - t)^(s - 1), {t, 0, 0.36954}] == 0.25, NIntegrate[145.18695 t^(k - 1) (1 - t)^(s - 1), {t, 0, 0.61102}] == 0.75}, {{k, 0}, {s, 0}}]

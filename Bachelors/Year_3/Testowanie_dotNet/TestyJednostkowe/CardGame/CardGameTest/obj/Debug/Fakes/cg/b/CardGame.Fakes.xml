@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CardGame.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:CardGame.Fakes.ShimCard">
+            <summary>Shim type of CardGame.Card</summary>
+        </member>
+        <member name="M:CardGame.Fakes.ShimCard.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CardGame.Fakes.ShimCard.#ctor(CardGame.Card)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:CardGame.Fakes.ShimCard.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.AllInstances.CardCostGet">
+            <summary>Sets the shim of Card.get_CardCost()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.AllInstances.CardCostSetInt32">
+            <summary>Sets the shim of Card.set_CardCost(Int32 value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.AllInstances.CardNameGet">
+            <summary>Sets the shim of Card.get_CardName()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.AllInstances.CardNameSetString">
+            <summary>Sets the shim of Card.set_CardName(String value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.AllInstances.CardPriceGet">
+            <summary>Sets the shim of Card.get_CardPrice()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.AllInstances.CardPriceSetInt32">
+            <summary>Sets the shim of Card.set_CardPrice(Int32 value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.AllInstances.CardTextGet">
+            <summary>Sets the shim of Card.get_CardText()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.AllInstances.CardTextSetString">
+            <summary>Sets the shim of Card.set_CardText(String value)</summary>
+        </member>
+        <member name="M:CardGame.Fakes.ShimCard.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CardGame.Fakes.ShimCard.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.CardCostGet">
+            <summary>Sets the shim of Card.get_CardCost()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.CardCostSetInt32">
+            <summary>Sets the shim of Card.set_CardCost(Int32 value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.CardNameGet">
+            <summary>Sets the shim of Card.get_CardName()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.CardNameSetString">
+            <summary>Sets the shim of Card.set_CardName(String value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.CardPriceGet">
+            <summary>Sets the shim of Card.get_CardPrice()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.CardPriceSetInt32">
+            <summary>Sets the shim of Card.set_CardPrice(Int32 value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.CardTextGet">
+            <summary>Sets the shim of Card.get_CardText()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.CardTextSetString">
+            <summary>Sets the shim of Card.set_CardText(String value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.Constructor">
+            <summary>Sets the shim of Card.Card()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimCard.ConstructorInt32StringInt32String">
+            <summary>Sets the shim of Card.Card(Int32 cost, String name, Int32 price, String text)</summary>
+        </member>
+        <member name="T:CardGame.Fakes.ShimDeck">
+            <summary>Shim type of CardGame.Deck</summary>
+        </member>
+        <member name="M:CardGame.Fakes.ShimDeck.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CardGame.Fakes.ShimDeck.#ctor(CardGame.Deck)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.AddCardCard">
+            <summary>Sets the shim of Deck.AddCard(Card card)</summary>
+        </member>
+        <member name="T:CardGame.Fakes.ShimDeck.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.AllInstances.AddCardCard">
+            <summary>Sets the shim of Deck.AddCard(Card card)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.AllInstances.IdGet">
+            <summary>Sets the shim of Deck.get_Id()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Deck.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.AllInstances.NameGet">
+            <summary>Sets the shim of Deck.get_Name()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.AllInstances.NameSetString">
+            <summary>Sets the shim of Deck.set_Name(String value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.AllInstances.OwnerGet">
+            <summary>Sets the shim of Deck.get_Owner()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.AllInstances.OwnerSetPlayer">
+            <summary>Sets the shim of Deck.set_Owner(Player value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.AllInstances.RemoveCardCard">
+            <summary>Sets the shim of Deck.RemoveCard(Card card)</summary>
+        </member>
+        <member name="M:CardGame.Fakes.ShimDeck.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CardGame.Fakes.ShimDeck.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.Constructor">
+            <summary>Sets the shim of Deck.Deck()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.ConstructorStringPlayer">
+            <summary>Sets the shim of Deck.Deck(String name, Player player)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.DeckCompletion">
+            <summary>Sets the shim of Deck.DeckCompletion()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.IdGet">
+            <summary>Sets the shim of Deck.get_Id()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.IdSetInt32">
+            <summary>Sets the shim of Deck.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.NameGet">
+            <summary>Sets the shim of Deck.get_Name()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.NameSetString">
+            <summary>Sets the shim of Deck.set_Name(String value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.OwnerGet">
+            <summary>Sets the shim of Deck.get_Owner()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.OwnerSetPlayer">
+            <summary>Sets the shim of Deck.set_Owner(Player value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimDeck.RemoveCardCard">
+            <summary>Sets the shim of Deck.RemoveCard(Card card)</summary>
+        </member>
+        <member name="T:CardGame.Fakes.ShimPlayer">
+            <summary>Shim type of CardGame.Player</summary>
+        </member>
+        <member name="M:CardGame.Fakes.ShimPlayer.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CardGame.Fakes.ShimPlayer.#ctor(CardGame.Player)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:CardGame.Fakes.ShimPlayer.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.AllInstances.BuyCardInt32">
+            <summary>Sets the shim of Player.BuyCard(Int32 cost)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.AllInstances.BuyPointsDoubleDouble">
+            <summary>Sets the shim of Player.BuyPoints(Double currency, Double tax)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.AllInstances.NickGet">
+            <summary>Sets the shim of Player.get_Nick()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.AllInstances.NickSetString">
+            <summary>Sets the shim of Player.set_Nick(String value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.AllInstances.PointsGet">
+            <summary>Sets the shim of Player.get_Points()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.AllInstances.PointsSetInt32">
+            <summary>Sets the shim of Player.set_Points(Int32 value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.AllInstances.SellCardInt32">
+            <summary>Sets the shim of Player.SellCard(Int32 cost)</summary>
+        </member>
+        <member name="M:CardGame.Fakes.ShimPlayer.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CardGame.Fakes.ShimPlayer.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CardGame.Fakes.ShimPlayer.Bind(CardGame.IAccount)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.BuyCardInt32">
+            <summary>Sets the shim of Player.BuyCard(Int32 cost)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.BuyPointsDoubleDouble">
+            <summary>Sets the shim of Player.BuyPoints(Double currency, Double tax)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.Constructor">
+            <summary>Sets the shim of Player.Player()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.ConstructorStringInt32">
+            <summary>Sets the shim of Player.Player(String nick, Int32 points)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.NickGet">
+            <summary>Sets the shim of Player.get_Nick()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.NickSetString">
+            <summary>Sets the shim of Player.set_Nick(String value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.PointsGet">
+            <summary>Sets the shim of Player.get_Points()</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.PointsSetInt32">
+            <summary>Sets the shim of Player.set_Points(Int32 value)</summary>
+        </member>
+        <member name="P:CardGame.Fakes.ShimPlayer.SellCardInt32">
+            <summary>Sets the shim of Player.SellCard(Int32 cost)</summary>
+        </member>
+        <member name="T:CardGame.Fakes.StubCard">
+            <summary>Stub type of CardGame.Card</summary>
+        </member>
+        <member name="M:CardGame.Fakes.StubCard.#ctor(System.Int32,System.String,System.Int32,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:CardGame.Fakes.StubCard.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:CardGame.Fakes.StubCard.InitializeStub">
+            <summary>Initializes a new instance of type StubCard</summary>
+        </member>
+        <member name="P:CardGame.Fakes.StubCard.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CardGame.Fakes.StubCard.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:CardGame.Fakes.StubDeck">
+            <summary>Stub type of CardGame.Deck</summary>
+        </member>
+        <member name="M:CardGame.Fakes.StubDeck.#ctor(System.String,CardGame.Player)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:CardGame.Fakes.StubDeck.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:CardGame.Fakes.StubDeck.InitializeStub">
+            <summary>Initializes a new instance of type StubDeck</summary>
+        </member>
+        <member name="P:CardGame.Fakes.StubDeck.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CardGame.Fakes.StubDeck.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:CardGame.Fakes.StubIAccount">
+            <summary>Stub type of CardGame.IAccount</summary>
+        </member>
+        <member name="M:CardGame.Fakes.StubIAccount.#ctor">
+            <summary>Initializes a new instance of type StubIAccount</summary>
+        </member>
+        <member name="F:CardGame.Fakes.StubIAccount.BuyPointsDoubleDouble">
+            <summary>Sets the stub of IAccount.BuyPoints(Double currency, Double tax)</summary>
+        </member>
+        <member name="M:CardGame.Fakes.StubIAccount.CardGame#IAccount#BuyPoints(System.Double,System.Double)">
+            <summary>Sets the stub of IAccount.BuyPoints(Double currency, Double tax)</summary>
+        </member>
+        <member name="T:CardGame.Fakes.StubPlayer">
+            <summary>Stub type of CardGame.Player</summary>
+        </member>
+        <member name="M:CardGame.Fakes.StubPlayer.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CardGame.Fakes.StubPlayer.#ctor(System.String,System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:CardGame.Fakes.StubPlayer.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:CardGame.Fakes.StubPlayer.InitializeStub">
+            <summary>Initializes a new instance of type StubPlayer</summary>
+        </member>
+        <member name="P:CardGame.Fakes.StubPlayer.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CardGame.Fakes.StubPlayer.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

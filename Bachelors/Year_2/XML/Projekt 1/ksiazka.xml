@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="ksiazka.css"?>
+<!DOCTYPE ksiazka SYSTEM "ksiazka.dtd">
+<ksiazka>
+		<osoba plec="m" gr="u">
+				<imie>Jan</imie>
+				<nazwisko>Brzechwa</nazwisko>
+				<telefon>661254367</telefon>
+				<gg>1234567</gg>
+				<email>jb@gmail.com</email>
+				<strona>https://inf.ug.edu.pl/</strona>
+		</osoba>
+		<osoba plec="k" gr="u">
+				<imie>Wisława</imie>
+				<nazwisko>Szymborska</nazwisko>
+				<telefon>330098764</telefon>
+				<gg>2345678</gg>
+				<email>wsz@gmail.com</email>
+				<strona>https://inf.ug.edu.pl/</strona>
+		</osoba>
+		<osoba plec="k" gr="p">
+				<imie>Anna</imie>
+				<nazwisko>Kowalska</nazwisko>
+				<telefon>567837465</telefon>
+				<gg>3456789</gg>
+				<email>ak@gmail.com</email>
+				<strona>http://www.google.pl</strona>
+		</osoba>
+		<osoba plec="m" gr="p">
+				<imie>Hubert</imie>
+				<nazwisko>Urbański</nazwisko>
+				<telefon>987654321</telefon>
+				<gg>4567890</gg>
+				<email>hu@gmail.com</email>
+				<strona>https://inf.ug.edu.pl/</strona>
+		</osoba>	
+		<osoba plec="m" gr="u">
+				<imie>Kuba</imie>
+				<nazwisko>Wojewódzki</nazwisko>
+				<telefon>123123132</telefon>
+				<gg>5678901</gg>
+				<email>kw@gmail.com</email>
+				<strona>https://inf.ug.edu.pl/</strona>
+		</osoba>
+		<osoba plec="k" gr="p">
+				<imie>Krzysztof</imie>
+				<nazwisko>Kononowicz</nazwisko>
+				<telefon>334567234</telefon>
+				<gg>6789012</gg>
+				<email>kk@gmail.com</email>
+				<strona>http://www.google.pl</strona>
+		</osoba>
+		<osoba plec="m" gr="r">
+				<imie>Pan</imie>
+				<nazwisko>Cebula</nazwisko>
+				<telefon>333444555</telefon>
+				<gg>1234566</gg>
+				<email>pc@gmail.com</email>
+				<strona>https://inf.ug.edu.pl/</strona>
+		</osoba>
+		<osoba plec="k" gr="r">
+				<imie>Pani</imie>
+				<nazwisko>Cebula</nazwisko>
+				<telefon>333444555</telefon>
+				<gg>1234566</gg>
+				<email>pc@gmail.com</email>
+				<strona>https://inf.ug.edu.pl/</strona>
+		</osoba>
+	<grupa skrot='p'>Praca</grupa>
+	<grupa skrot='u'>Uczelnia</grupa>
+	<grupa skrot='r'>Rodzina</grupa>
+</ksiazka>

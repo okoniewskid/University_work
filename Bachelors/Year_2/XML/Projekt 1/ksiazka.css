@@ -1,0 +1,89 @@
+/*uzyte nowinki z css3: cienie, zaokraglone ramki, wypelnienie gradientem, podwojne tlo*/
+ksiazka{
+	background: url('http://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg') right bottom no-repeat, -moz-radial-gradient(center, ellipse cover, #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%), url(img_flwr.gif);
+	background-size: 75px, cover;
+}
+
+osoba{
+	border: 1px;
+	display: block;
+	float: left;
+	width: 220px;
+	margin: 20px;
+	padding: 6px;
+	border-radius: 20px;
+	box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+/*Zliczanie grup*/
+ksiazka{
+    counter-reset: uczen;
+}
+osoba[gr="u"]{
+    counter-increment: uczen;
+}
+osoba[gr="u"]:before{
+	content: "gr Uczelnia: "counter(uczen);
+	font-weight: bold;
+	font-family: Arial;
+}
+
+ksiazka{
+    counter-reset: pracownik;
+}
+osoba[gr="p"]{
+    counter-increment: pracownik;
+}
+osoba[gr="p"]:before{
+	content: "gr Praca: "counter(pracownik);
+	font-weight: bold;
+	font-family: Arial;
+}
+
+ksiazka{
+    counter-reset: rodzina;
+}
+osoba[gr="r"]{
+    counter-increment: rodzina; 
+}
+osoba[gr="r"]:before{
+	content: "gr Rodzina: "counter(rodzina);
+	font-weight: bold;
+	font-family: Arial;
+}
+/*kursor*/
+osoba:hover {cursor: url(http://ani.cursors-4u.net/games/gam-16/gam1535.cur), progress !important;}
+
+imie, nazwisko {
+	font-size:16px;
+	font-family: Helvetica Neue;
+}
+
+osoba[gr="u"]{ background: #59B233; }
+osoba[gr="p"]{ background: #F28CEB; }
+osoba[gr="r"]{ background: #C1BA32; }
+
+osoba>imie,nazwisko,telefon,gg,email,strona{
+	display: block;
+}
+
+imie:before { content: "Imię: "; font-weight: bold; font-family: Arial, sans-serif;} 
+nazwisko:before { content: "Nazwisko: "; font-weight: bold; font-family: Arial, sans-serif;}
+telefon:before { content: "tel: "; font-weight: bold; font-family: Arial, sans-serif;}
+gg:before { content: "gg: "; font-weight: bold; font-family: Arial, sans-serif;}
+email:before { content: "email: "; font-weight: bold; font-family: Arial, sans-serif;}
+strona:before { content: "strona: "; font-weight: bold; font-family: Arial, sans-serif;}
+
+grupa{
+	display: none;
+}
+/*ikonki plci*/
+osoba[plec="m"]>nazwisko:after{
+    content:" płeć: " url('http://icons.iconarchive.com/icons/icons-land/vista-love/24/Sex-Male-icon.png/');
+    font-weight: bold; font-family: Arial, sans-serif;
+	display: block;
+}
+osoba[plec="k"]>nazwisko:after{
+    content:" płeć: " url('http://icons.iconarchive.com/icons/icons-land/vista-love/24/Sex-Female-icon.png/'); 
+    font-weight: bold; font-family: Arial, sans-serif;
+	display: block;
+}

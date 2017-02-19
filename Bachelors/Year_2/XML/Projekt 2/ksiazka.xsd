@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<xsd:element name="ksiazka">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="osoba" type="tosoba" minOccurs="1" maxOccurs="unbounded"/>
+				<xsd:element name="grupy" type="tgrupy" minOccurs="1" maxOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+  		<xsd:key name="kgrupa">
+    		<xsd:selector xpath="grupy/grupa"/>
+    		<xsd:field    xpath="@kod"/>
+  		</xsd:key>
+  		<xsd:keyref name="klucz" refer="kgrupa">
+    		<xsd:selector xpath="osoba"/>
+    		<xsd:field    xpath="@kod"/>
+  		</xsd:keyref>
+	</xsd:element>
+	
+			<xsd:complexType name="tosoba">
+				<xsd:all>
+					<xsd:element name="imie" type="timie" minOccurs="1" maxOccurs="1"/>
+					<xsd:element name="nazwisko" type="timie" minOccurs="1" maxOccurs="1"/>
+					<xsd:element name="adres" type="tadres"/>
+					<xsd:element name="kontakt" type="tkontakt"/>
+					<xsd:element name="strona" type="tstrona" minOccurs="0" maxOccurs="1"/>
+					<xsd:element name="daty" type="tdaty" minOccurs="1" maxOccurs="1"/>
+					<xsd:element ref="status"/>
+				</xsd:all>
+				<xsd:attribute name="plec" type="tplec" use="required"/>
+				<xsd:attribute type="tkod" name="kod" use="required"/>
+			</xsd:complexType>
+			
+						<xsd:simpleType name="timie">
+							<xsd:restriction base="xsd:string">
+								<xsd:pattern value="[A-Za-z].+"/>
+								<xsd:minLength value="0"/>
+								<xsd:maxLength value="30"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+						
+						<xsd:simpleType name="tplec">
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="k"/>
+								<xsd:enumeration value="m"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+		
+						<xsd:complexType name="tadres">
+							<xsd:sequence>
+								<xsd:choice>
+									<xsd:element name="miasto" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+									<xsd:element name="dzielnica" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+								</xsd:choice>
+								<xsd:element name="ulica" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+								<xsd:element name="nr_domu" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+								<xsd:element name="kod_pocztowy" type="tkod_pocztowy" minOccurs="1" maxOccurs="1"/>
+							</xsd:sequence>
+						</xsd:complexType>
+		
+											<xsd:simpleType name="tkod_pocztowy">
+												<xsd:restriction base="xsd:string">
+													<xsd:pattern value="[0-9][0-9][-][0-9][0-9][0-9]"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+		
+						<xsd:complexType name="tkontakt">
+							<xsd:sequence>
+								<xsd:element name="telefon" type="tttelefon" minOccurs="0" maxOccurs="3"/>
+								<xsd:element name="email" type="temail" minOccurs="0" maxOccurs="5"/>
+								<xsd:element name="gg" type="tgg" minOccurs="0" maxOccurs="1"/>
+							</xsd:sequence>
+						</xsd:complexType>
+			
+											<xsd:simpleType name="typtel">
+												<xsd:restriction base="xsd:string">
+													<xsd:enumeration value="dom"/>
+													<xsd:enumeration value="kom"/>
+													<xsd:enumeration value="slu"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+											
+											<xsd:complexType name="tttelefon">
+												<xsd:simpleContent>
+													<xsd:extension base="ttelefon">
+														<xsd:attribute name="typ" type="typtel" use="required"/>
+													</xsd:extension>
+												</xsd:simpleContent>
+											</xsd:complexType>
+											
+											<xsd:simpleType name="ttelefon">
+												<xsd:restriction base="xsd:string">
+													<xsd:pattern value="\+48\d{9}|\d{9}"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+											
+											<xsd:simpleType name="tgg">
+												<xsd:restriction base="xsd:string">
+													<xsd:pattern value="[0-9]+"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+											
+											<xsd:simpleType name="temail">
+												<xsd:restriction base="xsd:string">
+													<xsd:pattern value=".+[@].+[.].+"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+			
+						<xsd:simpleType name="tstrona">
+							<xsd:restriction base="xsd:string">
+								<xsd:pattern value="[h][t][t][p][:][/][/].+"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+						
+						<xsd:simpleType name="tdaty">
+							<xsd:union memberTypes="listadaty tbrak"/>
+						</xsd:simpleType>
+						<xsd:simpleType name="listadaty">
+							<xsd:list itemType="dni"/>
+						</xsd:simpleType>
+						<xsd:simpleType name="dni">
+							<xsd:restriction base="xsd:date"/>
+						</xsd:simpleType>
+						<xsd:simpleType name="tbrak">
+							<xsd:restriction base="xsd:string">
+								<xsd:pattern value="brak"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+						
+						<xsd:element name="status">
+							<xsd:complexType>
+								<xsd:attribute name="tekst" use="required" type="ttekst"/>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:simpleType name="ttekst">
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="jestem online"/>
+								<xsd:enumeration value="jestem offline"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+				
+			<xsd:complexType name="tgrupy">
+				<xsd:sequence>
+					<xsd:element name="grupa" type="ttgrupa" minOccurs="1" maxOccurs="unbounded"/>
+				</xsd:sequence>
+			</xsd:complexType>
+	
+						<xsd:complexType name="ttgrupa">
+							<xsd:simpleContent>
+								<xsd:extension base="tgrupa">
+									<xsd:attribute type="tkod" name="kod" use="required"/>
+								</xsd:extension>
+							</xsd:simpleContent>
+						</xsd:complexType>
+						
+						<xsd:simpleType name="tgrupa">
+							<xsd:restriction base="xsd:string"/>
+						</xsd:simpleType>
+		
+			<xsd:simpleType name="tkod">
+				<xsd:restriction base="xsd:string">
+					<xsd:pattern value="[A-Za-z].+"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+</xsd:schema>

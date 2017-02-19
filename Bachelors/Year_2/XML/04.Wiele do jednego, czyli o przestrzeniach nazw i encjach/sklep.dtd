@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT sklep (dzialy, produkty)>
+
+<!ELEMENT dzialy (dzial+)>
+
+<!ELEMENT produkty (produkt+)>
+<!ELEMENT produkt (nazwa, ilosc)>
+
+<!ELEMENT dzial (#PCDATA)>
+<!ELEMENT nazwa (#PCDATA)>
+<!ELEMENT ilosc (#PCDATA)>
+
+<!ATTLIST dzial 
+	skrot ID #REQUIRED>
+<!ATTLIST produkt
+	kod ID #REQUIRED
+	dzial_skrot IDREF #REQUIRED>	

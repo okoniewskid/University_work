@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprzet_komputerowy>
+	<monitor>
+		<toshiba>
+			<parametry_wyswietlania>
+				<przekatna_ekranu>20"</przekatna_ekranu>
+				<obszar_wyswietlania>433,4 x 270,9</obszar_wyswietlania>
+				<wspolczynnik_kontrastu>800:1</wspolczynnik_kontrastu>
+			</parametry_wyswietlania>
+			<zlacza>
+				<zlacze_wejsciowe>15-stykowe D-Sub</zlacze_wejsciowe>
+			</zlacza>
+		</toshiba>
+		<dell>
+			<parametry_wyswietlania>
+				<przekatna_ekranu>18,5"</przekatna_ekranu>
+				<obszar_wyswietlania>410 x 230</obszar_wyswietlania>
+				<wspolczynnik_kontrastu>600:1</wspolczynnik_kontrastu>
+			</parametry_wyswietlania>
+			<zlacza>
+				<zlacze_wejsciowe>15-stykowe D-Sub</zlacze_wejsciowe>
+			</zlacza>
+		</dell>
+	</monitor>
+	<myszka>
+		<razer>
+			<model>Naga</model>
+			<parametry>
+				<il_przyciskow>12</il_przyciskow>
+				<waga>135g</waga>
+				<sensor>laserowy:8200dpi</sensor>
+			</parametry>
+		</razer>
+		<roccat>
+			<model>Tyon</model>
+			<parametry>
+				<il_przyciskow>14</il_przyciskow>
+				<waga>126g</waga>
+				<sensor>laserowy Avago:800-8200dpi</sensor>
+			</parametry>
+		</roccat>
+	</myszka>
+</sprzet_komputerowy>

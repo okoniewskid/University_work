@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT uczelnia   (nazwa, rektor, prorektor, prorektor, 
+                      wydzial, wydzial+, katedra*,biblioteka?)>
+
+<!ELEMENT nazwa      (#PCDATA)>
+<!ELEMENT rektor     (tytul, imie, nazwisko)>
+<!ELEMENT prorektor  (tytul, imie, nazwisko)>
+<!ELEMENT imie       (#PCDATA)>
+<!ELEMENT nazwisko   (#PCDATA)>
+<!ELEMENT tytul      (#PCDATA)>
+<!ELEMENT wydzial    (nazwa, dziekan, prodziekan*, instytut+, kierunek+)>
+<!ELEMENT dziekan    (imie, nazwisko, tytul)>
+<!ELEMENT prodziekan (imie, nazwisko, tytul)>
+<!ELEMENT instytut   (nazwa, dyrektor)>
+<!ELEMENT dyrektor   (tytul, imie, nazwisko)>
+<!ELEMENT kierunek   (nazwa, kurs+)>
+<!ELEMENT kurs       (nazwa, opis, forma*, limit)>
+<!ELEMENT opis       (#PCDATA)>
+<!ELEMENT forma      (#PCDATA)>
+<!ELEMENT limit     (#PCDATA)>
+<!ELEMENT katedra    (nazwa, dyrektor)>
+<!ELEMENT biblioteka (#PCDATA)>     

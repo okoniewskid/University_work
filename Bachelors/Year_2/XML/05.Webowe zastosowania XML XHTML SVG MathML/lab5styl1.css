@@ -1,0 +1,29 @@
+body {
+background: url(lab5tlo.png);
+}
+#pudelko {
+margin: 30px auto 30px auto;
+padding-left: 20px;
+padding-right: 20px;
+border: 1px solid red;
+width: 600px;
+background: white;
+}
+h1 {
+text-align: center;
+color: red;
+}
+img#logo {
+float: right;
+margin: 10px;
+}
+p {
+text-align: justify;
+}
+.normalny {
+font-family: Tahoma, Arial, serif;
+}
+.pochylony {
+font-family: Tahoma, Arial, serif;
+font-style: italic;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<faktura2>
+	<produkty>
+		<produkt>
+			<nazwa>xbox 360</nazwa>
+			<kod>A1B2</kod>
+			<cena waluta="PLN">820.00</cena>
+			<ilosc>52</ilosc>	
+		</produkt>
+	</produkty>
+	<sklepy>
+		<sklep>
+			<nazwa>Konsoleigry</nazwa>
+			<adres>
+				<miasto>Gdańsk</miasto>
+				<ulica>gospody</ulica>
+				<kod_pocztowy>14-222</kod_pocztowy>
+			</adres>
+			<telefon>514986989</telefon>
+			<nip>5322025936</nip>
+		</sklep>
+	</sklepy>
+</faktura2>

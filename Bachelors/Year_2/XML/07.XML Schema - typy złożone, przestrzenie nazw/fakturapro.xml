@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faktury>
+	<faktura>
+		<nazwa_produktu>Nazwa</nazwa_produktu>
+		<kod_produktu>S8K123X</kod_produktu>
+		<cena waluta="zl">6,00</cena>
+		<ilosc_zakupionych>1</ilosc_zakupionych>
+	
+		<sklep>
+			<nazwa>Sklep</nazwa>
+			<adres>
+				<miasto>Gdynia</miasto>
+				<kod>22-444</kod>
+				<ulica>Starowiejska</ulica>
+			</adres>
+			<telefon>123456789</telefon>
+			<nip>564-5465-4654</nip>
+		</sklep>
+	
+		<dostawca>
+			<imie>Daniel</imie>
+			<nazwisko>Okoniewski</nazwisko>
+			<adres>
+				<miasto>Gdynia</miasto>
+				<kod>22-444</kod>
+				<ulica>Starowiejska</ulica>
+			</adres>
+			<telefony>
+				<tel_stac>999888777</tel_stac>
+			</telefony>
+		</dostawca>
+	</faktura>
+	<faktura>
+		<nazwa_produktu>Nazwa</nazwa_produktu>
+		<kod_produktu>S8K123X</kod_produktu>
+		<cena waluta="zl">6,00</cena>
+		<ilosc_zakupionych>1</ilosc_zakupionych>
+	
+		<sklep>
+			<nazwa>Sklep</nazwa>
+			<adres>
+				<miasto>Gdynia</miasto>
+				<kod>22-444</kod>
+				<ulica>Starowiejska</ulica>
+			</adres>
+			<telefon>123456789</telefon>
+			<nip>564-5465-4654</nip>
+		</sklep>
+	
+		<dostawca>
+			<imie>Daniel</imie>
+			<nazwisko>Okoniewski</nazwisko>
+			<adres>
+				<miasto>Gdynia</miasto>
+				<kod>22-444</kod>
+				<ulica>Starowiejska</ulica>
+			</adres>
+			<telefony>
+				<tel_stac>999888777</tel_stac>
+			</telefony>
+		</dostawca>
+	</faktura>
+	<fakturaPro>
+		<nazwa_produktu>Nazwa</nazwa_produktu>
+		<kod_produktu>S8K123X</kod_produktu>
+		<cena waluta="zl">6,00</cena>
+		<ilosc_zakupionych>1</ilosc_zakupionych>
+	
+		<sklep>
+			<nazwa>Sklep</nazwa>
+			<adres>
+				<miasto>Gdynia</miasto>
+				<kod>22-444</kod>
+				<ulica>Starowiejska</ulica>
+			</adres>
+			<telefon>123456789</telefon>
+			<nip>564-5465-4654</nip>
+		</sklep>
+	
+		<dostawca>
+			<imie>Daniel</imie>
+			<nazwisko>Okoniewski</nazwisko>
+			<adres>
+				<miasto>Gdynia</miasto>
+				<kod>22-444</kod>
+				<ulica>Starowiejska</ulica>
+			</adres>
+			<telefony>
+				<tel_stac>999888777</tel_stac>
+			</telefony>
+		</dostawca>
+		<strona>www.google.com</strona>
+	</fakturaPro>
+	<fakturaPro>
+		<nazwa_produktu>Nazwa</nazwa_produktu>
+		<kod_produktu>S8K123X</kod_produktu>
+		<cena waluta="zl">6,00</cena>
+		<ilosc_zakupionych>1</ilosc_zakupionych>
+	
+		<sklep>
+			<nazwa>Sklep</nazwa>
+			<adres>
+				<miasto>Gdynia</miasto>
+				<kod>22-444</kod>
+				<ulica>Starowiejska</ulica>
+			</adres>
+			<telefon>123456789</telefon>
+			<nip>564-5465-4654</nip>
+		</sklep>
+	
+		<dostawca>
+			<imie>Daniel</imie>
+			<nazwisko>Okoniewski</nazwisko>
+			<adres>
+				<miasto>Gdynia</miasto>
+				<kod>22-444</kod>
+				<ulica>Starowiejska</ulica>
+			</adres>
+			<telefony>
+				<tel_stac>999888777</tel_stac>
+			</telefony>
+		</dostawca>
+		<strona>www.google.com</strona>
+	</fakturaPro>
+</faktury>

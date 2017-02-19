@@ -1,0 +1,5 @@
+//program wyświetlający literę i liczbę
+#include <stdio.h>
+void main()
+{
+}
